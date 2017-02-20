@@ -1,0 +1,23 @@
+{
+  "name": "www.zhangguangda.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkless/www.zhangguangda.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkless/www.zhangguangda.com/issues"
+  },
+  "homepage": "https://github.com/inkless/www.zhangguangda.com#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
