@@ -59,3 +59,6 @@ typings/
 
 # letsencrypt
 .well-known
+
+# database
+/db
