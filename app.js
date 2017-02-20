@@ -1,4 +1,8 @@
+require('dotenv').config();
+
 const express = require('express');
+const auth = require('express-authentication');
+const basic = require('express-authentication-basic');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
@@ -22,8 +26,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// auth
+app.use(basic(process.env.AUTH_NAME, process.env.AUTH_PWD));
+
 app.use('/', index);
-app.use('/home_ip', homeIp);
+app.use('/home_ip', auth.required(), homeIp);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
