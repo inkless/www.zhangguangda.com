@@ -20,12 +20,12 @@
     "basicauth-middleware": "^2.0.0",
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
+    "debug": "^2.6.9",
     "dotenv": "^4.0.0",
     "express": "~4.14.1",
     "morgan": "~1.7.0",
-    "pug": "~2.0.0-beta10",
+    "pug": "^2.0.3",
     "serve-favicon": "~2.3.2",
-    "sqlite": "^2.3.0"
+    "sqlite": "^2.9.3"
   }
 }

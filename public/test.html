@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+  <h3>Your mixpanel token:</h3>
+  <p id="token"></p>
+
+  <iframe src="https://connect.mixpanel.com/zendesk/auth/user_token" frameborder="0"></iframe>
+
+  <script>
+    window.addEventListener('message', event => {
+      if (event.origin === 'https://connect.mixpanel.com') {
+        if (event.data.token) {
+          document.getElementById('token').innerHTML = event.data.token
+        }
+      }
+    })
+  </script>
+    
+</body>
+</html>
